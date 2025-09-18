@@ -1,5 +1,5 @@
-num1 = float(input("Enter first number: "))
-num2 = float(input("Enter second number: "))
+numbers = input("Enter the first number, Enter the second number:")
+num1, num2 = map(float, numbers.split())
 operation = input("Choose an operation (add, subtract, multiply, divide): ")
 match operation:
     case "add":         
