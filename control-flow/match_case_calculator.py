@@ -1,18 +1,18 @@
 num1 = input("Enter the first number: ")
 num2 = input("Enter the second number: ")
 num1, num2 = map(float, (num1, num2))
-operation = input("Choose an operation (add, subtract, multiply, divide): ")
+operation = input("Choose an operation (+, -, * , /): ")
 match operation:
-    case "add":         
+    case "+":
         result = num1 + num2
         print(f" The result is {result}")
-    case "subtract":
+    case "-":
         result = num1 - num2
-        print(f" The result is {result}")           
-    case "multiply":
+        print(f" The result is {result}")
+    case "*":
         result = num1 * num2
         print(f" The result is {result}")
-    case "divide":
+    case "/":
         if num2 != 0:
             result = num1 / num2
             print(f" The result is {result}")
