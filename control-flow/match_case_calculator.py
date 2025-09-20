@@ -17,4 +17,4 @@ match operation:
             result = num1 / num2
             print(f" The result is {result}")
         else:
-            print(" Division by zero is not allowed.")
+            print(f"Division by zero is not allowed.")
