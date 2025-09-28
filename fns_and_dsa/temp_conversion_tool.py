@@ -17,4 +17,4 @@ elif temp.endswith("C"):
     fahrenheit = convert_to_fahrenheit(celsius)
     print(f"{celsius}C is {fahrenheit:.2f}F")
 else:
-    print("Invalid input format.")
+    print("Invalid temperature. Please enter a numeric value.")
