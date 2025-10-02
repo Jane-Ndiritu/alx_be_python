@@ -5,8 +5,8 @@ def safe_divide(numerator, denominator):
         denominator = float(denominator)
 
         if denominator == 0:
-            return "Cannot divide by zero"
+            return "Error: Cannot divide by zero"
         return f"The result of the division is {numerator / denominator}"
 
     except ValueError:
-        return "Error: Invalid input"
+        return "Error: Please provide numeric values only."
