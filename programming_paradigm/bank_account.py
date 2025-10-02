@@ -16,7 +16,7 @@ class BankAccount:
         return True
 
     def display_balance(self) -> None:
-        print(f"Current Balance: {self.balance:.2f}")
+        print(f"Current Balance: ${self.balance:.2f}")
 
     def __str__(self) -> str:
         return f"BankAccount(account_balance={self.balance:.2f})"
