@@ -1,3 +1,28 @@
+class Book:
+    def __init__(self, title: str, author: str):
+        self.title = title
+        self.author = author
+        self._is_checked_out = False
+
+    def check_out(self):
+        """Mark the book as checked out."""
+        if not self._is_checked_out:
+            self._is_checked_out = True
+            print(f'You have checked out "{self.title}".')
+        else:
+            print(f'Sorry, "{self.title}" is already checked out.')
+
+    def return_book(self):
+        """Mark the book as returned."""
+        if self._is_checked_out:
+            self._is_checked_out = False
+            print(f'You have returned "{self.title}".')
+        else:
+            print(f'"{self.title}" was not checked out.')
+
+    def is_available(self):
+        """Check if the book is available."""
+        return not self._is_checked_out
 class Library:
     def __init__(self):
         self._books = []
